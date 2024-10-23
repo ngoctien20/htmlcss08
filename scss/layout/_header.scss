@@ -16,7 +16,8 @@
     @extend %flexItemsCenter;
     position: relative;
     padding: 30px 0;
-
+    z-index: 1;
+    
     @include abstracts.breakpoint(md) {
         padding: 16px 0;
         justify-content: space-between;
@@ -49,7 +50,7 @@
         }
     }
     @include abstracts.breakpoint(sm) {
-       inset:0 20% 0 0 ;
+        inset: 0 20% 0 0;
     }
     &__close-btn {
         display: none;
@@ -58,9 +59,8 @@
             padding: 10px 40px;
         }
         @include abstracts.breakpoint(sm) {
-            padding:0  20px 10px;
-
-         }
+            padding: 0 20px 10px;
+        }
     }
     &__overlay {
         visibility: hidden;
@@ -81,16 +81,14 @@
         @include abstracts.breakpoint(lg) {
             flex-direction: column;
             align-items: flex-start;
-            overflow-y: auto;        
+            overflow-y: auto;
             height: calc(100% - 40px);
             overscroll-behavior: contain;
         }
         @include abstracts.breakpoint(md) {
-                 
             height: calc(100% - 142px);
         }
         @include abstracts.breakpoint(sm) {
-                 
             height: calc(100% - 120px);
         }
     }
@@ -109,7 +107,6 @@
                 display: block !important;
             }
         }
-        
     }
     &__link {
         @extend %flexItemsCenter;
@@ -125,12 +122,11 @@
             padding: 0 40px;
             font-size: 1.6rem;
             line-height: 150%;
-           
         }
         @include abstracts.breakpoint(sm) {
             padding: 10px 20px;
             height: 44px;
-         }
+        }
     }
 
     &__arrow {

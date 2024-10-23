@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Grocery mart</title>
 
-        <!-- Favicon -->
-        <link
-            rel="apple-touch-icon"
-            sizes="76x76"
-            href="./assets/favicon/apple-touch-icon.png" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="48x49"
-            href="./assets/favicon/favicon-48x48.png" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./assets/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery mart</title>
 
-        <!-- Fonts -->
-        <link
-            rel="stylesheet"
-            href="./assets/fonts/font_gordita/stylesheet.css" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="48x49" href="./assets/favicon/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/font_gordita/stylesheet.css" />
 
-        <!-- js -->
-        <script src="./assets/js/script.js"></script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header id="header" class="header"></header>
-        <script>
-            load("#header", "./templates/header.html");
-        </script>
-        <div class="container">
-            <!-- Main -->
-            <h1>Home page</h1>
-        </div>
-        <!-- Footer -->
-        <footer id="footer"></footer>
-        <script>
-            load("#footer", "./templates/footer.html");
-        </script>
-    </body>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- js -->
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header.html");
+    </script>
+    <div class="container">
+        <!-- Main -->
+
+        <main style="height:10000px">
+            <!-- Slideshow -->
+            <div class="slideshow">
+                <div class="slideshow__inner">
+                    <div class="slideshow__item">
+                        <a href="#!" class="slideshow__link">
+                            <picture>
+                                <source media="(max-width: 767.98px)" srcset="./assets/img/slideshow/item-1-md.png" />
+                                <img src="./assets/img/slideshow/item-1.png" alt="" class="slideshow__img" />
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slideshow__page">
+                    <span class="slideshow__num">1</span>
+                    <span class="slideshow__slider"></span>
+                    <span class="slideshow__num">5</span>
+                </div>
+            </div>
+    </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <script>
+        load("#footer", "./templates/footer.html");
+    </script>
+</body>
+
 </html>
