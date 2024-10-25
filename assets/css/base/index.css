@@ -170,8 +170,15 @@ input,
 textarea,
 select {
   font-family: inherit;
+  padding: 0;
   color: inherit;
+  outline: none;
+  border: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  background: transparent;
 }
 
 .icon {
