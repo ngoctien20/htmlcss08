@@ -7,6 +7,7 @@ html {
 
     --body-bg: #f6f6f6;
     --header-bg-color: #eee;
+    --footer-bg-color: var(--header-bg-color);
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate: #ededf6;
@@ -45,4 +46,14 @@ html {
     --filter-form-bg:#fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --filter-form-tag-bg:#F8F8FB;
+
+    // footer
+    --footer-text-color: #9e9da8;
+--footer-heading-color: #fff;
+--footer--payment-icon:#fff;
+--footer-link-color: #ccc;
+--footer-link-hover-color: #fff;
+--footer-border-color: #555;
+--footer-description-color: #aaa;
+--footer-icon-size: 25px;
 }
